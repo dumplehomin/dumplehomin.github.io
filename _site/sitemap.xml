@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+            <loc>/about/index.html</loc>
+        </url>
+    
+        <url>
+            <loc>/category/css/</loc>
+        </url>
+    
+        <url>
+            <loc>/category/dev/</loc>
+        </url>
+    
+        <url>
+            <loc>/feed.xml</loc>
+        </url>
+    
+        <url>
+            <loc>/category/html/</loc>
+        </url>
+    
+        <url>
+            <loc>/</loc>
+        </url>
+    
+        <url>
+            <loc>/javascript/index.html</loc>
+        </url>
+    
+        <url>
+            <loc>/category/jekyll/</loc>
+        </url>
+    
+        <url>
+            <loc>/category/js/</loc>
+        </url>
+    
+        <url>
+            <loc>/category/misc/</loc>
+        </url>
+    
+        <url>
+            <loc>/search.json</loc>
+        </url>
+    
+        <url>
+            <loc>/series/index.html</loc>
+        </url>
+    
+        <url>
+            <loc>/sitemap.xml</loc>
+        </url>
+    
+        <url>
+            <loc>/category/svg/</loc>
+        </url>
+    
+        <url>
+            <loc>/tags/index.html</loc>
+        </url>
+    
+    
+        <url>
+            <loc>/hoisting/</loc>
+        </url>
+  
+        <url>
+            <loc>/cloure/</loc>
+        </url>
+  
+        <url>
+            <loc>/scope/</loc>
+        </url>
+  
+        <url>
+            <loc>/how-to-use/</loc>
+        </url>
+  
+        <url>
+            <loc>/welcome-to-jekyll/</loc>
+        </url>
+  
+        <url>
+            <loc>/analisando-seu-codigo-js-com-linter/</loc>
+        </url>
+  
+        <url>
+            <loc>/social-meta-tags/</loc>
+        </url>
+  
+        <url>
+            <loc>/por-que-usar-svg/</loc>
+        </url>
+  
+        <url>
+            <loc>/dica-rapida-1/</loc>
+        </url>
+  
+</urlset>

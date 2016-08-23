@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-js">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cloure</title>
+    <meta name="description" content="Javascript">
+
+    <!-- Google Authorship Markup -->
+    <link rel="author" href="https://plus.google.com/+dumplehomin?rel=author">
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@dumpleHM">
+    <meta name="twitter:title" content="Cloure">
+    <meta name="twitter:description" content="Javascript">
+    
+    <meta property="twitter:image:src" content="/assets/img/dica-rapida-2/main.png">
+    
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="/cloure/">
+    <meta property="og:title" content="Cloure">
+    
+    <meta property="og:image" content="/assets/img/dica-rapida-2/main.png">
+    
+    <meta property="og:description" content="Javascript">
+    <meta property="og:site_name" content="dumpleHM - Beautiful Dreamer">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="Cloure"/>
+    <meta itemprop="description" content="Javascript">
+    <meta itemprop="image" content="/assets/img/blog-image.png"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/icons/favicon.ico" type="image/x-icon" />
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="dumpleHM Blog">
+    <meta name="msapplication-TileColor" content="#0562DC">
+    <meta name="msapplication-square70x70logo" content="smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="widetile.png" />
+    <meta name="msapplication-square310x310logo" content="largetile.png" />
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="#EB7728">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/cloure/">
+    <link rel="alternate" type="application/rss+xml" title="dumpleHM - Beautiful Dreamer" href="/feed.xml" />
+</head>
+
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none" version="1.1"><defs><symbol id="icon-menu" viewBox="0 0 1024 1024"><path class="path1" d="M128 213.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 725.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 469.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5z"/></symbol><symbol id="icon-search" viewBox="0 0 951 1024"><path class="path1" d="M658.286 475.429q0-105.714-75.143-180.857t-180.857-75.143-180.857 75.143-75.143 180.857 75.143 180.857 180.857 75.143 180.857-75.143 75.143-180.857zM950.857 950.857q0 29.714-21.714 51.429t-51.429 21.714q-30.857 0-51.429-21.714l-196-195.429q-102.286 70.857-228 70.857-81.714 0-156.286-31.714t-128.571-85.714-85.714-128.571-31.714-156.286 31.714-156.286 85.714-128.571 128.571-85.714 156.286-31.714 156.286 31.714 128.571 85.714 85.714 128.571 31.714 156.286q0 125.714-70.857 228l196 196q21.143 21.143 21.143 51.429z"/></symbol><symbol id="icon-close" viewBox="0 0 805 1024"><path class="path1" d="M741.714 755.429q0 22.857-16 38.857l-77.714 77.714q-16 16-38.857 16t-38.857-16l-168-168-168 168q-16 16-38.857 16t-38.857-16l-77.714-77.714q-16-16-16-38.857t16-38.857l168-168-168-168q-16-16-16-38.857t16-38.857l77.714-77.714q16-16 38.857-16t38.857 16l168 168 168-168q16-16 38.857-16t38.857 16l77.714 77.714q16 16 16 38.857t-16 38.857l-168 168 168 168q16 16 16 38.857z"/></symbol><symbol id="icon-twitter" viewBox="0 0 951 1024"><path class="path1" d="M925.714 233.143q-38.286 56-92.571 95.429 0.571 8 0.571 24 0 74.286-21.714 148.286t-66 142-105.429 120.286-147.429 83.429-184.571 31.143q-154.857 0-283.429-82.857 20 2.286 44.571 2.286 128.571 0 229.143-78.857-60-1.143-107.429-36.857t-65.143-91.143q18.857 2.857 34.857 2.857 24.571 0 48.571-6.286-64-13.143-106-63.714t-42-117.429v-2.286q38.857 21.714 83.429 23.429-37.714-25.143-60-65.714t-22.286-88q0-50.286 25.143-93.143 69.143 85.143 168.286 136.286t212.286 56.857q-4.571-21.714-4.571-42.286 0-76.571 54-130.571t130.571-54q80 0 134.857 58.286 62.286-12 117.143-44.571-21.143 65.714-81.143 101.714 53.143-5.714 106.286-28.571z"/></symbol><symbol id="icon-facebook" viewBox="0 0 585 1024"><path class="path1" d="M548 6.857v150.857h-89.714q-49.143 0-66.286 20.571t-17.143 61.714v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571q0-106.286 59.429-164.857t158.286-58.571q84 0 130.286 6.857z"/></symbol><symbol id="icon-google-plus" viewBox="0 0 951 1024"><path class="path1" d="M420 454.857q0 20.571 18.286 40.286t44.286 38.857 51.714 42 44 59.429 18.286 81.143q0 51.429-27.429 98.857-41.143 69.714-120.571 102.571t-170.286 32.857q-75.429 0-140.857-23.714t-98-78.571q-21.143-34.286-21.143-74.857 0-46.286 25.429-85.714t67.714-65.714q74.857-46.857 230.857-57.143-18.286-24-27.143-42.286t-8.857-41.714q0-20.571 12-48.571-26.286 2.286-38.857 2.286-84.571 0-142.571-55.143t-58-139.714q0-46.857 20.571-90.857t56.571-74.857q44-37.714 104.286-56t124.286-18.286h238.857l-78.857 50.286h-74.857q42.286 36 64 76t21.714 91.429q0 41.143-14 74t-33.714 53.143-39.714 37.143-34 35.143-14 37.714zM336.571 400q21.714 0 44.571-9.429t37.714-24.857q30.286-32.571 30.286-90.857 0-33.143-9.714-71.429t-27.714-74-48.286-59.143-66.857-23.429q-24 0-47.143 11.143t-37.429 30q-26.857 33.714-26.857 91.429 0 26.286 5.714 55.714t18 58.857 29.714 52.857 42.857 38.286 55.143 14.857zM337.714 898.857q33.143 0 63.714-7.429t56.571-22.286 41.714-41.714 15.714-62.286q0-14.286-4-28t-8.286-24-15.429-23.714-16.857-20-22-19.714-20.857-16.571-23.714-17.143-20.857-14.857q-9.143-1.143-27.429-1.143-30.286 0-60 4t-61.429 14.286-55.429 26.286-39.143 42.571-15.429 60.286q0 40 20 70.571t52.286 47.429 68 25.143 72.857 8.286zM800.571 398.286h121.714v61.714h-121.714v125.143h-60v-125.143h-121.143v-61.714h121.143v-124h60v124z"/></symbol></defs></svg>
+
+        <header class="bar-header">
+    <h1 class="logo">
+        <a href="/"></a>
+    </h1>
+</header>
+<div class="search-wrapper">
+    <div class="search-form">
+        <input type="text" class="search-field" placeholder="Search...">
+        <svg class="icon-remove-sign"><use xlink:href="#icon-close"></use></svg>
+        <ul class="search-results search-list"></ul>
+    </div>
+</div>
+
+<div id="fade" class="overlay"></div>
+<a id="slide" class="slideButton fade">
+    <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+    <svg id="close" class="icon-menu"><use xlink:href="#icon-close"></use></svg>
+</a>
+<aside id="sidebar">
+<nav id="navigation">
+  <h2>MENU</h2>
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/javascript">Javascript</a></li>
+    
+      <li><a href="/series">Series</a></li>
+    
+      <li><a href="/tags">Tags</a></li>
+    
+      <li><a href="/about">About Me</a></li>
+    
+    <li><a class="feed" href="/feed.xml" title="Atom/RSS feed">Feed</a></li>
+  </ul>
+</nav>
+</aside>
+<a id="search" class="dosearch">
+    <svg class="icon-menu icon-search"><use xlink:href="#icon-search"></use></svg>
+</a>
+
+<header class="header-post" role="banner">
+     <div class="content">
+        
+            <time itemprop="datePublished" datetime="2016-08-23T00:00:00+09:00" class="date">23 Aug 2016</time>
+        
+        <h1 class="post-title" itemprop="name">Cloure</h1>
+        <p itemprop="description" class="subtitle">Javascript</p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <p>외부함수( 포함하고 있는 )의 변수에 접근할 수 있는 내부 함수를 일컫는다.
+스코프 체인으로 표현되기도 하며, 클로저는 세가지 스코프 체인을 가진다.</p>
+
+<ol>
+  <li>자신에 대한 접근( 자신의 블럭내에 정의 된 변수 )</li>
+  <li>외부 함수의 변수에 대한 접근</li>
+  <li>전역 변수에 대한 접근</li>
+</ol>
+
+<p>내부함수는 외부함수의 변수 뿐만 아니라 파라미터에도 접근할 수 있다. 단 내부함수는 외부함수의 arguments 객체를 호출할 수는 없다. 하지만 외부 함수의 파라미터는 직접 호출할 수 있다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">showName</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">nameIntro</span> <span class="o">=</span> <span class="s2">"Your name is "</span><span class="p">;</span>
+    <span class="c1">// 이 내부 함수는 외부함수의 변수뿐만 아니라 파라미터 까지 사용할 수 있다</span>
+    <span class="kd">function</span> <span class="nx">makeFullName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">nameIntro</span> <span class="o">+</span> <span class="nx">firstName</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="nx">lastName</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">makeFullName</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="nx">showName</span><span class="p">(</span><span class="s2">"Michael"</span><span class="p">,</span> <span class="s2">"Jackson"</span><span class="p">);</span> <span class="c1">// Your name is Michael Jackson</span></code></pre></figure>
+
+<p>클로저는 Node.js 의 비동기, 논-블록킹 아키텍쳐의 핵심기능으로 활용되고 있다. jQuery에서도 빈번히 사용되며 거의 모든 자바스크립트 코드에서 볼 수 있다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// jQuery의 전형적인 클로저 사용예</span>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">selections</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".niners"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// 이 클로저는 selections 변수에 접근</span>
+        <span class="nx">selections</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s2">"name"</span><span class="p">));</span> <span class="c1">// 외부 함수의 selections 변수를 갱신함</span>
+    <span class="p">});</span>
+<span class="p">});</span></code></pre></figure>
+
+<h3 id="section">클로저 규칙과 부수 효과</h3>
+
+<p>클로저는 외부함수가 리턴된 이후에도 외부함수의 변수에 접근할수 있다.</p>
+
+<p>클로저를 사용하면서 가장 헷갈리는것 중의 하나는 외부함수가 리턴된 이후에도 여전히 내부함수가 외부함수의 변수에 접근하고 있다는 것이다. 자바스크립트의 함수가 실행되었을때, 함수는 자신이 생성되었을때와 동일한 스코프 체인을 사용한다. 그러므로 내부 함수를 나중에 호출할 수 있다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">celebrityName</span><span class="p">(</span><span class="nx">firstName</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">nameIntro</span> <span class="o">=</span> <span class="s2">"This is celebrity is "</span><span class="p">;</span>
+    <span class="c1">// 이 내부 함수는 외부함수의 변수와 파라미터에 접근할 수 있다.</span>
+    <span class="kd">function</span> <span class="nx">lastName</span><span class="p">(</span><span class="nx">theLastName</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">nameIntro</span> <span class="o">+</span> <span class="nx">firstName</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="nx">theLastName</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">lastName</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">mjName</span> <span class="o">=</span> <span class="nx">celebrityName</span><span class="p">(</span><span class="s2">"Michael"</span><span class="p">);</span> <span class="c1">// 여기서 celebrityName 외부함수가 리턴됨</span>
+<span class="c1">// 외부함수가 위에서 리턴된 후에, 클로저(lastName)가 호출</span>
+<span class="c1">// 아직, 클로저는 외부함수의 변수와 파라미터에 접근 가능</span>
+<span class="nx">mjName</span><span class="p">(</span><span class="s2">"Jackson"</span><span class="p">);</span> <span class="c1">// This celebrity is Michael Jackson</span></code></pre></figure>
+
+<p>클로저는 외부 함수의 변수에 대한 참조를 저장한다.</p>
+
+<p>클로저는 실제 값을 저장하지 않는다. 아래의 내부(private) 변수예제는 더글라스 크락포드(Douglas Crockford)에 의해 처음 시연되었다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">celebrityID</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">celebrityID</span> <span class="o">=</span> <span class="mi">999</span><span class="p">;</span>
+    <span class="c1">// 몇개의 내부 함수를 가진 객체를 리턴</span>
+    <span class="c1">// 모든 내부함수는 외부변수에 접근할 수 있다.</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="na">getID</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="c1">// 이 내부함수는 갱신된 celebrityID변수를 리턴</span>
+            <span class="c1">// 이것은 changeThdID함수가 값을 변경한 이후에도 celebrityID의 현재값을 리턴</span>
+            <span class="k">return</span> <span class="nx">celebrityID</span><span class="p">;</span>
+        <span class="p">},</span>
+        <span class="na">setID</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">theNewID</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// 이 내부함수는 외부함수의 값을 언제든지 변경</span>
+            <span class="nx">celebrityID</span> <span class="o">=</span> <span class="nx">theNewID</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">mjID</span> <span class="o">=</span> <span class="nx">celebrityID</span><span class="p">();</span> <span class="c1">// 이 시점에, celebrityID외부 함수가 리턴</span>
+<span class="nx">mjID</span><span class="p">.</span><span class="nx">getID</span><span class="p">();</span> <span class="c1">// 999</span>
+<span class="nx">mjID</span><span class="p">.</span><span class="nx">setID</span><span class="p">(</span><span class="mi">567</span><span class="p">);</span> <span class="c1">// 외부함수의 변수를 변경</span>
+<span class="nx">mjID</span><span class="p">.</span><span class="nx">getID</span><span class="p">();</span> <span class="c1">// 567; 변경된 celebrityID변수를 리턴</span></code></pre></figure>
+
+<h3 id="section-1">클로저 비꼬기</h3>
+
+<p>클로저가 갱신된 외부함수의 변수에 접근함으로써, 외부 함수의 변수가 for문에 의해 변경될 경우 의도치 않은 버그가 발생할 수 있다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">celebrityIDCreator</span><span class="p">(</span><span class="nx">theCelebrities</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">i</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">uniqueID</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">theCelebrities</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">theCelebrities</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nx">uniqueID</span> <span class="o">+</span> <span class="nx">i</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">theCelebrities</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">actionCelebs</span> <span class="o">=</span> <span class="p">[{</span><span class="na">name</span><span class="p">:</span><span class="s2">"Stallone"</span><span class="p">,</span> <span class="na">id</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span><span class="s2">"Cruise"</span><span class="p">,</span> <span class="na">id</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span><span class="s2">"Willis"</span><span class="p">,</span> <span class="na">id</span><span class="p">:</span><span class="mi">0</span><span class="p">}];</span>
+
+<span class="kd">var</span> <span class="nx">createIdForActionCelebs</span> <span class="o">=</span> <span class="nx">celebrityIDCreator</span><span class="p">(</span><span class="nx">actionCelebs</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">stalloneID</span> <span class="o">=</span> <span class="nx">createIdForActionCelebs</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stalloneID</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span> <span class="c1">// 103</span></code></pre></figure>
+
+<p>위의 예제에서, 익명의 내부함수가 실행될 시점에 i의 값은 3이다(배열의 크기만큼 증가한 값). 숫자 3은 uniqueID에 더해져 모든 celebritiesID에 103을 할당한다. 그래서 기대(100,101,102)와 달리 모든 리턴된 배열의 id=103이 된다.</p>
+
+<p>이런 결과가 나타난 이유는, 앞서 언급했듯이 클로저는(이 예제에서 내부의 익명함수) 외부 변수에 대해 값이 아닌 참조로 접근하기 때문이다. 즉, 클로저는 최종 갱신된 변수(i)에 대해서만 접근할 수 있으므로, 외부 함수가 전체 for문을 실행하고 리턴한 최종 i의 값을 리턴하게 된다. 100+3=103.</p>
+
+<p>이런 부작용을 고치기 위해서 “즉시 호출된 함수 표현식(Immediately Invoked Function Expression. IIFE)”를 사용할 수 있다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">celebrityIDCreator</span><span class="p">(</span><span class="nx">theCelebrities</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">i</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">uniqueID</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">theCelebrities</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">theCelebrities</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">j</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// j 파라미터는 호출시 즉시 넘겨받은(IIFE) i의 값이 된다.</span>
+            <span class="k">return</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                <span class="c1">// for문이 순환할때마다 현재 i의 값을 넘겨주고, 배열에 저장</span>
+                <span class="k">return</span> <span class="nx">uniqueID</span> <span class="o">+</span> <span class="nx">j</span><span class="p">;</span>
+            <span class="p">}</span> <span class="p">()</span> <span class="c1">// 함수의 마지막에 ()를 추가함으로써 함수를 리턴하는 대신 함수를 즉시 실행하고 그 결과값을 리턴</span>
+        <span class="p">}</span> <span class="p">(</span><span class="nx">i</span><span class="p">);</span> <span class="c1">// i 변수를 파라미터로 즉시 함수를 호출</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">theCelebrities</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">actionCelebs</span> <span class="o">=</span> <span class="p">[{</span><span class="na">name</span><span class="p">:</span><span class="s2">"Stallone"</span><span class="p">,</span> <span class="na">id</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span><span class="s2">"Cruise"</span><span class="p">,</span> <span class="na">id</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span><span class="s2">"Willis"</span><span class="p">,</span> <span class="na">id</span><span class="p">:</span><span class="mi">0</span><span class="p">}];</span>
+
+<span class="kd">var</span> <span class="nx">createIdForActionCelebs</span> <span class="o">=</span> <span class="nx">celebrityIDCreator</span><span class="p">(</span><span class="nx">actionCelebs</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">stalloneID</span> <span class="o">=</span> <span class="nx">createIdForActionCelebs</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stalloneID</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span> <span class="c1">// 100</span>
+
+<span class="kd">var</span> <span class="nx">cruiseID</span> <span class="o">=</span> <span class="nx">createIdForActionCelebs</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cruiseID</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span> <span class="c1">// 101</span></code></pre></figure>
+
+
+            </article>
+
+            <section class="share">
+    <h3>Share</h3>
+    <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;&quot;%20/cloure/%20via%20&#64;dumpleHM&hashtags=javascript,cloure,자바스크립트,클로저,"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+        <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+    </a>
+    <a aria-label="Share on Facebook"href="https://www.facebook.com/sharer/sharer.php?u=/cloure/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+        <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+    </a>
+    <a aria-label="Share on Google Plus" href="https://plus.google.com/share?url=/cloure/"
+    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+        <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg>
+    </a>
+</section>
+            <section class="author" itemprop="author">
+    <div class="details" itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" class="img-rounded" src="/assets/img/blog-author.jpg" alt="">
+        <p class="def">Author</p>
+        <h3 class="name">
+            <a itemprop="name" href="https://plus.google.com/+dumplehomin/posts">dumpleHM</a>
+        </h3>
+        <p class="desc">Front-end-Developer</p>
+        <p><a itemprop="email" class="email" href="mailto:hohomiminini@naver.com">hohomiminini@naver.com</a></p>
+        <p><a itemprop="github" class="github" href="https://github.com/dumplehomin">github.com/dumplehomin</a></p>
+    </div>
+</section>
+
+            <section class="comments">
+    <h3>Comments</h3>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+    var disqus_loaded = false;
+
+    function load_disqus()
+    {
+        disqus_loaded = true;
+        var disqus_shortname = 'dumpleHM';
+        var disqus_title = '';
+        var disqus_url = '/cloure/';
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        var ldr = document.getElementById('disqus_loader');
+    };
+    window.onscroll = function(e) {
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
+            //hit bottom of page
+            if (disqus_loaded==false)
+                load_disqus()
+        }
+    };
+</script>
+
+            <footer>
+    <p>Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <span class="love">❤</span> by <a href="/">dumpleHM</a></p>
+</footer>
+<script src="/assets/js/main.js"></script>
+        </section>
+    </body>
+</html>
