@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-js">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Prototype</title>
+    <meta name="description" content="JavaScript">
+
+    <!-- Google Authorship Markup -->
+    <link rel="author" href="https://plus.google.com/+dumplehomin?rel=author">
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@dumpleHM">
+    <meta name="twitter:title" content="Prototype">
+    <meta name="twitter:description" content="JavaScript">
+    
+    <meta property="twitter:image:src" content="/assets/img/dica-rapida-2/main.png">
+    
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="/prototype/">
+    <meta property="og:title" content="Prototype">
+    
+    <meta property="og:image" content="/assets/img/dica-rapida-2/main.png">
+    
+    <meta property="og:description" content="JavaScript">
+    <meta property="og:site_name" content="dumpleHM - Beautiful Dreamer">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="Prototype"/>
+    <meta itemprop="description" content="JavaScript">
+    <meta itemprop="image" content="/assets/img/blog-image.png"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/icons/favicon.ico" type="image/x-icon" />
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="dumpleHM Blog">
+    <meta name="msapplication-TileColor" content="#0562DC">
+    <meta name="msapplication-square70x70logo" content="smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="widetile.png" />
+    <meta name="msapplication-square310x310logo" content="largetile.png" />
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="#EB7728">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/prototype/">
+    <link rel="alternate" type="application/rss+xml" title="dumpleHM - Beautiful Dreamer" href="/feed.xml" />
+</head>
+
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none" version="1.1"><defs><symbol id="icon-menu" viewBox="0 0 1024 1024"><path class="path1" d="M128 213.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 725.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 469.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5z"/></symbol><symbol id="icon-search" viewBox="0 0 951 1024"><path class="path1" d="M658.286 475.429q0-105.714-75.143-180.857t-180.857-75.143-180.857 75.143-75.143 180.857 75.143 180.857 180.857 75.143 180.857-75.143 75.143-180.857zM950.857 950.857q0 29.714-21.714 51.429t-51.429 21.714q-30.857 0-51.429-21.714l-196-195.429q-102.286 70.857-228 70.857-81.714 0-156.286-31.714t-128.571-85.714-85.714-128.571-31.714-156.286 31.714-156.286 85.714-128.571 128.571-85.714 156.286-31.714 156.286 31.714 128.571 85.714 85.714 128.571 31.714 156.286q0 125.714-70.857 228l196 196q21.143 21.143 21.143 51.429z"/></symbol><symbol id="icon-close" viewBox="0 0 805 1024"><path class="path1" d="M741.714 755.429q0 22.857-16 38.857l-77.714 77.714q-16 16-38.857 16t-38.857-16l-168-168-168 168q-16 16-38.857 16t-38.857-16l-77.714-77.714q-16-16-16-38.857t16-38.857l168-168-168-168q-16-16-16-38.857t16-38.857l77.714-77.714q16-16 38.857-16t38.857 16l168 168 168-168q16-16 38.857-16t38.857 16l77.714 77.714q16 16 16 38.857t-16 38.857l-168 168 168 168q16 16 16 38.857z"/></symbol><symbol id="icon-twitter" viewBox="0 0 951 1024"><path class="path1" d="M925.714 233.143q-38.286 56-92.571 95.429 0.571 8 0.571 24 0 74.286-21.714 148.286t-66 142-105.429 120.286-147.429 83.429-184.571 31.143q-154.857 0-283.429-82.857 20 2.286 44.571 2.286 128.571 0 229.143-78.857-60-1.143-107.429-36.857t-65.143-91.143q18.857 2.857 34.857 2.857 24.571 0 48.571-6.286-64-13.143-106-63.714t-42-117.429v-2.286q38.857 21.714 83.429 23.429-37.714-25.143-60-65.714t-22.286-88q0-50.286 25.143-93.143 69.143 85.143 168.286 136.286t212.286 56.857q-4.571-21.714-4.571-42.286 0-76.571 54-130.571t130.571-54q80 0 134.857 58.286 62.286-12 117.143-44.571-21.143 65.714-81.143 101.714 53.143-5.714 106.286-28.571z"/></symbol><symbol id="icon-facebook" viewBox="0 0 585 1024"><path class="path1" d="M548 6.857v150.857h-89.714q-49.143 0-66.286 20.571t-17.143 61.714v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571q0-106.286 59.429-164.857t158.286-58.571q84 0 130.286 6.857z"/></symbol><symbol id="icon-google-plus" viewBox="0 0 951 1024"><path class="path1" d="M420 454.857q0 20.571 18.286 40.286t44.286 38.857 51.714 42 44 59.429 18.286 81.143q0 51.429-27.429 98.857-41.143 69.714-120.571 102.571t-170.286 32.857q-75.429 0-140.857-23.714t-98-78.571q-21.143-34.286-21.143-74.857 0-46.286 25.429-85.714t67.714-65.714q74.857-46.857 230.857-57.143-18.286-24-27.143-42.286t-8.857-41.714q0-20.571 12-48.571-26.286 2.286-38.857 2.286-84.571 0-142.571-55.143t-58-139.714q0-46.857 20.571-90.857t56.571-74.857q44-37.714 104.286-56t124.286-18.286h238.857l-78.857 50.286h-74.857q42.286 36 64 76t21.714 91.429q0 41.143-14 74t-33.714 53.143-39.714 37.143-34 35.143-14 37.714zM336.571 400q21.714 0 44.571-9.429t37.714-24.857q30.286-32.571 30.286-90.857 0-33.143-9.714-71.429t-27.714-74-48.286-59.143-66.857-23.429q-24 0-47.143 11.143t-37.429 30q-26.857 33.714-26.857 91.429 0 26.286 5.714 55.714t18 58.857 29.714 52.857 42.857 38.286 55.143 14.857zM337.714 898.857q33.143 0 63.714-7.429t56.571-22.286 41.714-41.714 15.714-62.286q0-14.286-4-28t-8.286-24-15.429-23.714-16.857-20-22-19.714-20.857-16.571-23.714-17.143-20.857-14.857q-9.143-1.143-27.429-1.143-30.286 0-60 4t-61.429 14.286-55.429 26.286-39.143 42.571-15.429 60.286q0 40 20 70.571t52.286 47.429 68 25.143 72.857 8.286zM800.571 398.286h121.714v61.714h-121.714v125.143h-60v-125.143h-121.143v-61.714h121.143v-124h60v124z"/></symbol></defs></svg>
+
+        <header class="bar-header">
+    <h1 class="logo">
+        <a href="/"></a>
+    </h1>
+</header>
+<div class="search-wrapper">
+    <div class="search-form">
+        <input type="text" class="search-field" placeholder="Search...">
+        <svg class="icon-remove-sign"><use xlink:href="#icon-close"></use></svg>
+        <ul class="search-results search-list"></ul>
+    </div>
+</div>
+
+<div id="fade" class="overlay"></div>
+<a id="slide" class="slideButton fade">
+    <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+    <svg id="close" class="icon-menu"><use xlink:href="#icon-close"></use></svg>
+</a>
+<aside id="sidebar">
+<nav id="navigation">
+  <h2>MENU</h2>
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/javascript">Javascript</a></li>
+    
+      <li><a href="/series">Series</a></li>
+    
+      <li><a href="/tags">Tags</a></li>
+    
+      <li><a href="/about">About Me</a></li>
+    
+    <li><a class="feed" href="/feed.xml" title="Atom/RSS feed">Feed</a></li>
+  </ul>
+</nav>
+</aside>
+<a id="search" class="dosearch">
+    <svg class="icon-menu icon-search"><use xlink:href="#icon-search"></use></svg>
+</a>
+
+<header class="header-post" role="banner">
+     <div class="content">
+        
+            <time itemprop="datePublished" datetime="2016-08-23T00:00:00+09:00" class="date">23 Aug 2016</time>
+        
+        <h1 class="post-title" itemprop="name">Prototype</h1>
+        <p itemprop="description" class="subtitle">JavaScript</p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <h2 id="section">프로토타입 기반 프로그래밍이란?</h2>
+<blockquote>
+  <p>객체의 원형인 프로토타입을 이용하여 새로운 객체를 만들어내는 프로그래밍 기법이다. 이렇게 만들어진 객체 역시 자기자신의 프로토타입을 갖는다. 이 새로운 객체의 원형을 이용하면 또 다른 새로운 객체를 만들어 낼 수도 있으며 이런 구조로 객체를 확장하는 방식을 프로토타입 기반 프로그래밍이라고 한다.</p>
+</blockquote>
+
+<p>이 프로토타입 기반 프로그래밍은 Class 기반 OOP언어를 다루던 사람에게는 이해가 잘 안가는 부분 일 수도 있다. Class기반의 언어에서는 Class 안에 기술된 내용을 기반으로 인스턴스를 생성하여 객체를 사용한다. 하지만 자바스크립트는 Class가 존재하지 않는다. 그래서 자바스크립트에서는 객체의 원형인 프로토타입을 이용한 클로닝(Cloning:복사)과 객체특성을 확장해 나가는 방식을 통해 새로운 객체를 생성해 낸다.자바스크립트 응용에서 다룰 프로그래밍 패턴과 연관된 재밌는 사실중 하나는 자바스크립트의 프로토타입 객체의 확장은 옵져버패턴을 따른다.</p>
+
+<h3 id="section-1">자바스크립트에서 사용되는 프로토타입</h3>
+<p>자바스크립트에서 사용되는 프로토타입이란 용어는 크게 두가지로 나눈다. <strong>Prototype Property</strong>가 가리키고 있는 <strong>Prototype Object</strong>와 자기 자신을 만들어낸 객체의 원형을 의미하는 <strong>Prototype Link</strong>이다. 자바스크립트 관련 레퍼런스는 대부분 프로토타입에 대한 정의는 객체의 원형을 의미하는 <strong>Prototype Link</strong>로 정의 하지만 이 둘은 엄연히 틀린 의미이기 때문에 제대로 이해하고 있어야 한다.</p>
+
+<h3 id="section-2">자바스크립트의 프로토타입이란?</h3>
+<blockquote>
+  <p>자바스크립트의 모든 객체는 자신을 생성한 객체 원형에 대한 숨겨진 연결을 갖는다. 이때 자기 자신을 생성하기 위해 사용된 객체원형을 프로토타입이라 한다. 자바스크립트의 모든 객체는 Object 객체의 프로토타입을 기반으로 확장 되었기 때문에 이 연결의 끝은 Object 객체의 프로토타입 Object이다.</p>
+</blockquote>
+
+<p>어떠한 객체가 만들어지기 위해 그 객체의 모태가 되는 것을 프로토타입이라고 한다. Java나 PHP에서 말하는 class가 바로 자바스크립트의 프로토타입과 동일한 의미이다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">A</span><span class="p">(){};</span>
+<span class="kd">var</span> <span class="nx">A</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">A</span> <span class="p">);</span></code></pre></figure>
+
+<p>위 예제는 new Operator를 사용하여 A라는 객체 생성자를 이용한 새로운 객체를 생성하여 B라는 변수에 담는 코드이다. 그렇게 만들어진 객체를 console.log를 찍어보면 아래와 같은 내용을 확인 할 수 있다.</p>
+
+<p><img src="/post_img/prototype_img1.jpg" alt="Prototype Example" /></p>
+
+<p>위 내용에서 주의깊게 봐야할 것이 있다. 바로  <strong><em>proto</em></strong> 와  <strong>constructor</strong> 이다. <strong>__proto__</strong> 바로 이 녀석이 A라는 객체를 만들어내기 위해 사용된 객체원형에 대한 숨겨진 연결이다. 해당 객체의 프로토타입은 A라는 함수객체이며 이 객체의 생성자 역시 function A() 함수라는 것이다. 즉 <strong>new Operator</strong>를 통해 만들어진 객체는 function A() 를 자신의 프로토타입으로 사용하여 만들어졌다는 말이다.</p>
+
+<p>하지만 “내가 알고 있는 프로토타입은 저게 아닌데?” 라고 생각하고 있을 것이다. 그 이유는 우리가 알고 있는 프로토타입은 자신을 만들어낸 객체원형을 의미하는 것이 아니고 prototype property이다.</p>
+
+<h3 id="section-3">자바스크립트의 프로토타입 프로퍼티란?</h3>
+<blockquote>
+  <p>모든 함수 객체의 Constructor 는 prototype 이라는 프로퍼티를 가지고 있다. 이 prototype 프로퍼티는 객체가 생성될 당시 만들어지는 객체 자신의 원형이 될 prototype 객체를 가리킨다. 즉 자신을 만든 원형이 아닌 자신을 통해 만들어질 객체들이 원형으로 사용할 객체를 말한다. prototype object 는 default 로 empty Object를 가리킨다.</p>
+</blockquote>
+
+<p>자바스크립트의 모든 객체는 생성과 동시에 자기자신이 생성될 당시의 정보를 취한 <strong>Prototype Object</strong> 라는 새로운 객체를 Cloning 하여 만들어 낸다.프로토타입이 객체를 만들어내기 위한 원형이라면 이 <strong>Prototype Object</strong> 는 자기 자신의 분신이며 자신ㅇㄹ 원형으로 만들어질 다른 객체가 참조할 프로토타입이 된다. 즉 객체 자신을 이용할 다른 객체들이 프로토타입으로 사용할 객체가 <strong>Prototype Object</strong> 인 것이다. 즉 위에서 언급한  <strong><em>proto</em></strong> 라는 prototype에 대한 link는 상위에서 물려받은 객체의 프로토타입에 대한 정보이며 prototype 프로퍼티는 자신을 원형으로 만들어질 새로운 객체들, 즉 하위로 물려줄 연결에 대한 속성이다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(){};</span>
+<span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">foo</span><span class="p">();</span></code></pre></figure>
+
+<p>위 예제코드를 통해 만들어지는 Prototype Link와 Prototype Property가 가리키는 prototype Object의 Real Link에 대한 관계도는 다음과 같다.</p>
+
+<p><img src="/post_img/prototype_img2.png" alt="Prototype Example" /></p>
+
+<p>위 관계도에서 알수 있듯 모든 객체의 확장은 객체가 소유한 <strong>prototype Object</strong> 를 통해 이루어지며 이 연결의 끝은 Object 객체의  <strong>prototype Object</strong> 가 된다. 일반적으로 자바스크립트 코드를 통해 다루는 prototype 이 객체가 소유한 자기자신의 prototype Object 이기 떄문이다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">x</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">A</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">foo</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span> 
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">A</span><span class="p">.</span><span class="nx">x</span><span class="p">);</span>
+<span class="c1">//hello</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">A</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span>
+<span class="c1">//syntax error</span></code></pre></figure>
+
+<p>prototype 프로퍼티는  Constructor가 가지는 프로퍼티 이다. 그리고 함수객체만이 이 프로퍼티를 가지고 있다고 했다. A객체는 함수객체가 아니다. foo라는 원형을 이용하여 함수객체를 통해 만들어진 Object 객체에 확장된 단일 객체일 뿐이다. 즉 A는 prototype 프로퍼티를 소유하고 있지 않기에 A.prototype.x가 syntax error인 것이다. 즉 프로토타입을 이해하려면 foo.prototype.x.는 OK, A.prototype.x 는 error 라는 사실을 반드시 이해하고 이억하고 있어야 한다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">A</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+         <span class="c1">//do something</span>
+    <span class="p">};</span>
+<span class="p">};</span>
+
+<span class="c1">//#예제 2.</span>
+<span class="kd">var</span> <span class="nx">A</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="p">};</span>
+<span class="nx">A</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//do something</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>예제1의 this.x는 A의 프로퍼티 x이고 예제2는 A의 prototype Object 에 연결된 x라는 것을 이해할수 있을 것이다. 그럼 굳이 왜 prototype을 사용하여야 하는가? 이문제는 객체를 어떻게 사용 할 것인가에 따라 다르게 된다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//#예제 1.</span>
+<span class="kd">var</span> <span class="nx">A</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
+    <span class="p">};</span>
+<span class="p">};</span>
+<span class="nx">A</span><span class="p">.</span><span class="nx">x</span><span class="o">=</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'world'</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">B</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">C</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<span class="nx">B</span><span class="p">.</span><span class="nx">x</span><span class="p">();</span>
+<span class="c1">//hello</span>
+<span class="nx">C</span><span class="p">.</span><span class="nx">x</span><span class="p">();</span>
+<span class="c1">//hello</span>
+
+<span class="c1">//#예제 2.</span>
+<span class="kd">var</span> <span class="nx">A</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="p">};</span>
+<span class="nx">A</span><span class="p">.</span><span class="nx">x</span><span class="o">=</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="nx">A</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'world'</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">B</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">C</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<span class="nx">B</span><span class="p">.</span><span class="nx">x</span><span class="p">();</span>
+<span class="c1">//world</span>
+<span class="nx">C</span><span class="p">.</span><span class="nx">x</span><span class="p">();</span>
+<span class="c1">//world</span></code></pre></figure>
+
+<p>예제1, 예제2 에서 B,C 를 생성하기 위한 객체 원형 프로토타입은 A이다. 하지만 여기서 반드시 집고 넘어가야하는 사실은 B,C는 A를 프로토타입으로 사용하기 위해서 A의 prototype Object를 사용한다는 것이다. 그리고 이 prototype Object는 A가 생성될 당시의 정보만을 가지기 때문에 예제1에서 A의prototype Object가 알고 있는 x는 function(){console.log(“hello”);} 가 된다. 즉 A.x를 아무리 수정하여도 A의 prototype Object는 변경되지 않기 떄문에 A 를 프로토타입으로 생성되는 B,C는 function(){console.log(“hello”);} 만 참조하는 것이다.</p>
+
+<p>예제2 에서의 결과가 world가 되는 이유도 같은 이유다. A.prototype은 A의 prototype Object를 참조하는 녀석이기 때문에 A.prototype.x를 정의한다는 것은 A의 prototype Object를 직접 이용하게 되는 것이고 그에 따라서 A의 prototype Object를 프로토타입으로 이용하여 만들어지는 B,C가 알고 있는 x는 function(){console.log(“world”)} 가 되는 것이다.</p>
+
+<p>예제2의 객체 상속 모델을 그림으로 표현하면 아래와 같이 나온다.</p>
+
+<p><img src="/post_img/prototype_img3.png" alt="Prototype Example" /></p>
+
+<h3 id="section-4">자바스크립트의 프로토타입 체인</h3>
+<blockquote>
+  <p>객체의 생성 과정에서 모태가 되는 프로토타입과의 연결고리가 이어져 상속관계를 통하여 상위 프로토타입으로 연속해서 이어지는 관계를 프로토타입 체인 이라고 한다. 이 연결은 <strong>proto</strong> 를 따라 올라가게 된다.</p>
+</blockquote>
+
+<p>즉 프로토타입 체인이란 위에서 봤던 프로토타입을 상속해서 만들어지는 객체들간의 연관관계를 의미한다. 그림에서 <strong>proto</strong> 프로퍼티들간 이어진 점선을 타고 가다보면 최종적으로 object 객체의 prototype object 에 다다르는 것을 알 수 있다. 그렇기 때문에 자바스크립트의 모든 객체는 object 객체에서부터 파생되어 나온 자식들이라고 하는것이다.</p>
+
+<p>이러한 프로토타입 체인은 하위 객체에서 상위 객체의 프로퍼티와 메소드를 상속받는다. 그리고 동일한 이름의 프로퍼티와 메소드를 재정의 하지 않는 이상 상위에서 정의한 내용을 그대로 물려받는다. 하지만 여기에는 엄청난 꼼수가 숨어있다. 위 그림을 잘 보면 B 와 C 는 A prototype object 를 프로토타입으로 만들어졌음에도 불구하고 X 라는 프로퍼티가 존재하지 않는다. 사실 물려받는다 라는 말 자체가 꼼수인 것이다. 즉 하위 객체는 상위 객체의 속성과 메소드를 상속 받는 것이 아니라 그것을 공유 하고 있는 것이다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">A</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="p">};</span>
+<span class="nx">A</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">B</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">C</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+
+<span class="nx">B</span><span class="p">.</span><span class="nx">x</span><span class="p">();</span>
+<span class="c1">//hello </span>
+
+<span class="nx">C</span><span class="p">.</span><span class="nx">x</span><span class="p">();</span>
+<span class="c1">//hello </span>
+
+<span class="nx">A</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'world'</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="nx">B</span><span class="p">.</span><span class="nx">x</span><span class="p">();</span>
+<span class="c1">//world</span>
+
+<span class="nx">C</span><span class="p">.</span><span class="nx">x</span><span class="p">();</span>
+<span class="c1">//world</span></code></pre></figure>
+
+<p>위 예제에서 A의 prototype object 의 x메소드를 재정의 하였을 때 B, C 객체도 그 영향을 받는다는 것을 알 수 있다. 그 이유는 프로토타입 체인에 의한 공유 때문이다.</p>
+
+<p><img src="/post_img/prototype_img4.png" alt="Prototype Example" /></p>
+
+<p>여기서 유심히 봐야할 것은 A prototype object 가 소유한 Constructor 다. A prototype object의 Constructor 는 A객체의 생성자 함수 이다. 즉 이를 통해 만들어지는 객체들은 A객체가 생성될 당시 소유하고 있지 않는 x라는 메소드를 가질 수 없다. x는 A.prototype 을 이용하여 A prototype object 에 추가 되어진 메소드다. 하지만 x메소드는 프로토타입 체인에 의한 공유 메소드다. A 의 prototype object가 소유한 x 라는 메소드는 A prototype object 를 프로토타입으로 만들어진 모든 객체에서 사용할 수 있다. 이는 프로토타입 기반 상속에서 매우 중요한 특성을 말하고 있다.</p>
+
+<p>위 예제에서 사용한 x라는 메소드를 하위 객체에서 찾지 못하면 상위 객체에서 해당 메소드를 탐색한다. 이러한 방법으로 프로토타입 체인을 따라 최상위 객체까지 도달할때 까지 해당 메소드를 찾지 못한다면 undefined 가 되는 것이다.</p>
+
+<p><img src="/post_img/prototype_img5.png" alt="Prototype Example" /></p>
+
+<p>하지만 A객체가 생성 당시 x라는 메소드 혹은 의미있는 프로퍼티에 대한 정의가 포함된 내용을 가지고 있다면 이들은 공유가 아닌 상속된다.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">A</span><span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{};</span>
+<span class="kd">var</span> <span class="nx">B</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<span class="nx">A</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">x</span><span class="o">=</span><span class="s1">'hello'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">B</span><span class="p">);</span></code></pre></figure>
+
+<p><img src="/post_img/prototype_img6.jpeg" alt="Prototype Example" /></p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">A</span><span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="o">=</span><span class="s1">'hello'</span><span class="p">;};</span>
+<span class="kd">var</span> <span class="nx">B</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">B</span><span class="p">);</span></code></pre></figure>
+
+<p><img src="/post_img/prototype_img7.jpeg" alt="Prototype Example" /></p>
+
+<p>이처럼 공유와 상속의 구분을 정확히 이해하고 사용하는 것은 매우 중요하다.이들을 햇갈리게 되면 후에 프로토타입 재정의에 따른 원하지 않는 결과를 줄 수 있기 때문이다.</p>
+
+
+            </article>
+
+            <section class="share">
+    <h3>Share</h3>
+    <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;&quot;%20/prototype/%20via%20&#64;dumpleHM&hashtags=javaScript,prototype,자바스크립트,프로토타입,"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+        <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+    </a>
+    <a aria-label="Share on Facebook"href="https://www.facebook.com/sharer/sharer.php?u=/prototype/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+        <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+    </a>
+    <a aria-label="Share on Google Plus" href="https://plus.google.com/share?url=/prototype/"
+    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+        <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg>
+    </a>
+</section>
+            <section class="author" itemprop="author">
+    <div class="details" itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" class="img-rounded" src="/assets/img/blog-author.jpg" alt="">
+        <p class="def">Author</p>
+        <h3 class="name">
+            <a itemprop="name" href="https://plus.google.com/+dumplehomin/posts">dumpleHM</a>
+        </h3>
+        <p class="desc">Front-end-Developer</p>
+        <p><a itemprop="email" class="email" href="mailto:hohomiminini@naver.com">hohomiminini@naver.com</a></p>
+        <p><a itemprop="github" class="github" href="https://github.com/dumplehomin">github.com/dumplehomin</a></p>
+    </div>
+</section>
+
+            <section class="comments">
+    <h3>Comments</h3>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+    var disqus_loaded = false;
+
+    function load_disqus()
+    {
+        disqus_loaded = true;
+        var disqus_shortname = 'dumpleHM';
+        var disqus_title = '';
+        var disqus_url = '/prototype/';
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        var ldr = document.getElementById('disqus_loader');
+    };
+    window.onscroll = function(e) {
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
+            //hit bottom of page
+            if (disqus_loaded==false)
+                load_disqus()
+        }
+    };
+</script>
+
+            <footer>
+    <p>Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <span class="love">❤</span> by <a href="/">dumpleHM</a></p>
+</footer>
+<script src="/assets/js/main.js"></script>
+        </section>
+    </body>
+</html>

@@ -63,6 +63,18 @@
     
     
         <url>
+            <loc>/sanbox/</loc>
+        </url>
+  
+        <url>
+            <loc>/namespace/</loc>
+        </url>
+  
+        <url>
+            <loc>/prototype/</loc>
+        </url>
+  
+        <url>
             <loc>/hoisting/</loc>
         </url>
   

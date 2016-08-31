@@ -1,6 +1,27 @@
 [
   
     {
+      "title"    : "Sandbox Pattern",
+      "tags"     : "javaScript, Sandbox Pattern, pattern, 자바스크립트, 샌드박스 패턴, and 패턴",
+      "url"      : "/sanbox/",
+      "date"     : "29 Aug 2016"
+    } ,
+  
+    {
+      "title"    : "Namespace Pattern",
+      "tags"     : "javaScript, Namespace Pattern, pattern, 자바스크립트, 네임스페이스 패턴, and 패턴",
+      "url"      : "/namespace/",
+      "date"     : "24 Aug 2016"
+    } ,
+  
+    {
+      "title"    : "Prototype",
+      "tags"     : "javaScript, prototype, 자바스크립트, and 프로토타입",
+      "url"      : "/prototype/",
+      "date"     : "23 Aug 2016"
+    } ,
+  
+    {
       "title"    : "Hoisting",
       "tags"     : "javascript, hoisting, 자바스크립트, and 호이스팅",
       "url"      : "/hoisting/",
@@ -9,7 +30,7 @@
   
     {
       "title"    : "Cloure",
-      "tags"     : "javascript, cloure, 자바스크립트, and 클로저",
+      "tags"     : "javaScript, cloure, 자바스크립트, and 클로저",
       "url"      : "/cloure/",
       "date"     : "23 Aug 2016"
     } ,

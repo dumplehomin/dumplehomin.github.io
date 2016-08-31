@@ -15,10 +15,10 @@ tags:
 - 패턴
 categories: javascript
 twitter_text: ''
-introduction: "Namespace Pattern"
+introduction: "전역변수가 많아질 수록 이름이 겹칠 우려가 있다. 뿐만 아니라 어느 곳에서든 접근할 수 있으므로 소스코드의 신뢰성을 떨어뜨릴 수 있다. 이러한 단점을 보완하기 위한 방법으로 네임스페이스 패턴이 있다."
 ---
 
-전역변수를 기초로 하는 JavaScript의 단점 때문에 전역 네임슾이스의 오렴문제는 많이 신경쓰이는 부분이다. 여러 스크립트가 한 페이지 안에 함꼐 있는 소스코드에서는 전역변수가 많아질 수록 이름이 겹칠 우려가 있다. 뿐만 아니라 어느 곳에서든 접근할 수 있으므로 소스코드의 신뢰성을 떨어뜨릴 수 있다. 이러한 단점을 보완하기 위한 방법으로 네임스페이스 패턴이 있다.
+전역변수를 기초로 하는 JavaScript의 단점 때문에 전역 네임스페이스의 오염문제는 많이 신경쓰이는 부분이다. 여러 스크립트가 한 페이지 안에 함꼐 있는 소스코드에서는 전역변수가 많아질 수록 이름이 겹칠 우려가 있다. 뿐만 아니라 어느 곳에서든 접근할 수 있으므로 소스코드의 신뢰성을 떨어뜨릴 수 있다. 이러한 단점을 보완하기 위한 방법으로 네임스페이스 패턴이 있다.
 
 ### 1. var 사용
 JavaScript 에는 암묵적 전역이라는 개념이 있다. var를 사용하지 않고 변수를 선언하거나 선언되지 않은 변수를 사용하면 아무리 지역함수 내에 있더라도 전역에 속하게 된다. 정확히 말하면 전역변수가 아닌 전역객체의 프로퍼티로 생성된다.
@@ -227,71 +227,3 @@ MYAPP.nsFunc = function (ns_string) {
 {% endhighlight %}
 
 이렇게 만든 네임스페이스 함수를 사용하면 다음과 같은 긴 네임스페이스도 안전하게 만들 수 있다.
-
-
-#### 3.3 샌드박스 패턴 ( Sandbox Pattern )
-위에서 살펴 보았던 네임스페이스 패턴에서는 단 하나의 전역 객체를 생성했다. 샌드박스 패턴에서는 생성자를 유일한 전역으로 사용한다. 그리고 유일한 전역인 생성자에게 콜백함수를 전달해 모든 기능을 샌드박스 내부 환경으로 격리 시키는 방법을 사용한다.
-
-{% highlight javascript %}
-function Sandbox() {
-	    // argument를 배열로 바꾼다
-	var args = Array.prototype.slice.call(arguments),
-	    // 마지막 인자는 콜백 함수 
-	    callback = args.pop(),
-	    // 모듈은 배열로 전달될 수도있고 개별 인자로 전달 될 수도 있다
-	    modules = (args[0] && typeof args[0] === "string") ? args : args[0],
-	    i;
-
-	// 함수가 생성자로 호출되도록 보장(new를 강제하지 않는 패턴)
-	if (!(this instanceof Sandbox)) {
-		return new Sandbox(modules, callback);
-	}
-
-	// this에 필요한 프로퍼티들을 추가
-	this.a = 1;
-	this.b = 2;
-
-	// "this객체에 모듈을 추가"
-	// 모듈이 없거나 "*"(전부)이면 사용 가능한 모든 모듈을 사용한다는 의미입니다.
-	if (!modules || modules === '*' || modules[0] === '*') {
-		modules = [];
-		for (i in Sandbox.Modules) {
-			if (Sandbox.modules.hasOwnProperty(i)) {
-				modules.push(i);
-			}
-		}
-	}
-
-	// 필요한 모듈들을 초기화
-	var m_length = modules.length;
-	for (i=0; i<m_length; i+=1) {
-		Sandbox.modules[modules[i]](this);
-	}
-
-	// 콜백 함수 호출
-	callback(this);
-}
-
-// 필요한 프로토타입 프로퍼티들을 추가
-Sandbox.prototype = {
-	name: "nextree",
-	getName: function () {
-		return this.name;
-	}
-};
-
-{% endhighlight %}
-
-그리고 다음과 같이 new키워드를 사용하지 않고 ‘ajax’와 ‘dom’이라는 가상의 모듈을 사용하는 객체를 생성 한다. 이처럼 사용할 모듈들을 앞쪽 인자(argument)로 전달해주고, 마지막 인자로는 콜백 함수를 전달해 준다.
-
-{% highlight javascript %}
-Sandbox ('ajax', 'dom', function (box) {
-	// console.log(box);
-});
-{% endhighlight %}
-
-이렇게 샌드박스 패턴을 사용하면 콜백 함수로 감싸진 샌드박스 객체 안에서 구현이 가능하다. 또한 위에서 언급했던 네임스페이스 패턴의 몇 가지 단점을 극복할 수 있다.
-
-* 단 하나의 전역변수에 의존하는 네임스페이스 패턴의 단점을 여러 개의 샌드박스 객체를 생성함으로 극복할 수 있다.
-* 점으로 연결된 긴 이름을 쓸 필요가 없다.
-* 런타임(Runtime)에 탐색 작업을 거치지 않게 해준다.
