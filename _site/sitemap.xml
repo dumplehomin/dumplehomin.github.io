@@ -63,11 +63,23 @@
     
     
         <url>
+            <loc>/LocalStorage/</loc>
+        </url>
+  
+        <url>
+            <loc>/%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%80%E1%85%AA%E1%86%AB%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF/</loc>
+        </url>
+  
+        <url>
             <loc>/sanbox/</loc>
         </url>
   
         <url>
             <loc>/namespace/</loc>
+        </url>
+  
+        <url>
+            <loc>/$.proxy()/</loc>
         </url>
   
         <url>
@@ -84,30 +96,6 @@
   
         <url>
             <loc>/scope/</loc>
-        </url>
-  
-        <url>
-            <loc>/how-to-use/</loc>
-        </url>
-  
-        <url>
-            <loc>/welcome-to-jekyll/</loc>
-        </url>
-  
-        <url>
-            <loc>/analisando-seu-codigo-js-com-linter/</loc>
-        </url>
-  
-        <url>
-            <loc>/social-meta-tags/</loc>
-        </url>
-  
-        <url>
-            <loc>/por-que-usar-svg/</loc>
-        </url>
-  
-        <url>
-            <loc>/dica-rapida-1/</loc>
         </url>
   
 </urlset>
